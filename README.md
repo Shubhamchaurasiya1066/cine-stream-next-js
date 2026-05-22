@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CineStream
 
-## Getting Started
+CineStream is a premium movie discovery web application built using Next.js 15 App Router.
 
-First, run the development server:
+This project was developed as part of Sprint 09 Frontend Architecture specialization.
 
-```bash
+The application fetches movie data from the TMDB API and delivers a modern cinematic experience with Server-Side Rendering and SEO optimization.
+
+---
+
+# Features
+
+* Next.js 15 App Router
+* Server-Side Rendering (SSR)
+* Dynamic Routing
+* SEO Metadata Generation
+* TMDB API Integration
+* Responsive Design
+* Premium Cinematic UI
+* Tailwind CSS Styling
+* Dynamic Movie Pages
+* Optimized Next.js Image Component
+
+---
+
+# Tech Stack
+
+* Next.js 15
+* React
+* Tailwind CSS
+* TMDB API
+* React Icons
+
+---
+
+# Folder Structure
+
+src/
+├── app/
+│    ├── page.js
+│    ├── layout.js
+│    ├── movie/
+│    │     └── [id]/
+│    │           └── page.js
+│
+├── components/
+│    ├── Navbar.jsx
+│    ├── Hero.jsx
+│    ├── SearchBar.jsx
+│    ├── MovieGrid.jsx
+│    ├── MovieCard.jsx
+│    └── Footer.jsx
+│
+├── lib/
+│    └── tmdb.js
+
+---
+
+# Installation
+
+Clone the repository:
+
+git clone YOUR_GITHUB_REPO_LINK
+
+Install dependencies:
+
+npm install
+
+Run development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Create a .env.local file in the root directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+NEXT_PUBLIC_TMDB_API_KEY=74c48650157dba1ff74921785e8f7e85
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# SEO Optimization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project uses generateMetadata() in dynamic routes to create SEO-friendly titles and descriptions for each movie page.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# Deployment
+
+The project is deployed using Vercel.
+
+---
+
+# Learning Outcomes
+
+This project helped in understanding:
+
+* Server Components
+* Client Components
+* App Router Architecture
+* Dynamic Metadata
+* SSR in Next.js
+* SEO Optimization
+* File-Based Routing
+
+---
+
+# Author
+
+Shubham Chaurasiya
